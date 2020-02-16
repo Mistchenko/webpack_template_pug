@@ -1,0 +1,16 @@
+extends layout/base
+
+block vars
+    - var pageTitle = 'My site'
+    - var youAreUsingPug = true
+
+block content
+    h1 Pug - node template engine
+    #container.col
+        if youAreUsingPug
+            div.app-logo
+                img(src="/assets/img/logo.png")
+        else
+            p Переменная "youAreUsingPug" отсутствует
+        div.app-logo
+            a(href="https://tocode.ru/curses/nastroika-webpack4" target="_blank") Настройка Webpack
